@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_splash.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/app_name"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo" />
+
+    <!-- Tên ứng dụng -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/permanentmarker"
+        android:text="RECIPE WORLD"
+        android:textColor="#005500"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/dancingscript"
+        android:text="Cùng bếp nhà bạn - Nấu cả thế giới"
+        android:textColor="#005500"
+        android:textSize="26sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/slogan"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#005500" />
+
+</RelativeLayout>

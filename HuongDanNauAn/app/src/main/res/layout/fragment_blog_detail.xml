@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6FDE7"
+    tools:context=".fragment.BlogDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6FDE7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+
+            <!-- Hình ảnh bài viết -->
+            <ImageView
+                android:id="@+id/blogimg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_loading"/>
+
+            <!-- Tiêu đề bài viết -->
+            <TextView
+                android:id="@+id/blogtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Loading..."
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Ngày đăng -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/blogdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:text="Ngày đăng: --/--/----"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/saveblog"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_no_save"
+                    android:layout_marginHorizontal="10dp"/>
+            </LinearLayout>
+
+            <!-- Nội dung bài viết -->
+            <TextView
+                android:id="@+id/blogcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Loading..."
+                android:textColor="#444444"
+                android:textSize="16sp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chúc bạn một ngày tuyệt vời."
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/rounded_background2"
+                android:fontFamily="@font/dancingscript"
+                android:textColor="@color/black"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#444444"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

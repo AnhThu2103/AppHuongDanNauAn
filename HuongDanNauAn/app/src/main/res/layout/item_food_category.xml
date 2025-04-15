@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_background3"
+    android:gravity="center">
+
+    <!-- Hình ảnh món ăn -->
+    <ImageView
+        android:id="@+id/ivFoodImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="3"
+        android:scaleType="centerCrop" />
+
+    <!-- Tên món ăn -->
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Name"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:ellipsize="end"
+        android:lines="2"
+        android:gravity="center" />
+</LinearLayout>

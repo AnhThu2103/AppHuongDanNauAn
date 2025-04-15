@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "206881900921",
+    "firebase_url": "https://doanhuongdannauan-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "doanhuongdannauan",
+    "storage_bucket": "doanhuongdannauan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206881900921:android:cd3bebe54d9f32655a07a8",
+        "android_client_info": {
+          "package_name": "com.example.huongdannauan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6gElUFyHUNDABRhKWUZP3cg9aOu-D8JU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
